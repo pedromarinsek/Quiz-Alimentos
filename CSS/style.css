@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+    font-family: 'Bellota-Bold';
+    src: url(../FONTS/Bellota-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../FONTS/Roboto-Regular.ttf) format('truetype');
+}
+
+/*------------------- MENU --------------------*/
+
+#containerMenu {
+    width: 360px;
+    height: 720px;
+    background-color: #ece2d0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+#logo {
+    background-color: #ece2d0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+#logo h1{
+    font-family: 'Bellota-Bold', cursive;
+    font-size: 35px;
+    color: #92140c;
+}
+
+#btnPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btnMenu{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: #92140c 5px solid;
+    background-color: #ed7d3a;
+    transition: transform 0.3s;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;;
+    color: #444054;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.btnMenu:hover{
+    background-color: #92140c;
+    color: #ece2d0;
+    transform: scale(0.9);
+}
+
+#btnPlay {
+    display: flex;
+    width: 150px;
+    height: 76px;
+    background-image: url(../IMG/quiz_BtnPlay.png); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer; 
+    transition: transform 0.3s;
+}
+
+#btnPlay:hover {
+    transform: scale(0.9);
+}
+
+/* ------------------- FASES --------------------*/
+
+#containerFase {
+    width: 360px;
+    height: 720px;
+    background-color: #ed7d3a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    position: relative;
+}
+
+#nivel {
+    width: 110px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ece2d0;
+    border: #92140c 5px solid;
+    border-radius: 10px;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+#nivel h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #444054;
+}
+
+#imagem{
+    width: 300px;
+    height: 175px;
+    border: #92140c 3px solid;
+    margin-top: 30px;
+    background-image: url(../IMG/fase1Thumb.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ece2d0;
+    border-radius: 10px;
+}
+
+#pergunta {
+    width: 330px;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    background-color: #ece2d0;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: #92140c 5px solid;
+    padding: 10px;
+}
+
+#enunciado {
+    font-family: 'Roboto', sans-serif;
+    color: #444054;
+    font-size: 17px;
+    white-space: pre-wrap;
+    word-break: break-word
+}
+
+.btnAlternativa {
+    width: 300px;
+    height: 43px;
+    display: flex;
+    background-color: #ece2d0;
+    border: #92140c 3px solid;
+    border-radius: 25px;
+    color: #444054;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
+
+.btnAlternativa:hover {
+    transform: scale(0.9);
+}
+
+.btnAlternativa:disabled {
+    transform: none;
+    background-color: #92140c !important;
+    color: #ece2d0 !important;
+    cursor: not-allowed;
+}
+
+.numeroBolha {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background-color: #ece2d0;
+    color: #92140c;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 50%;
+    margin-right: 2px;
+    border: 4px solid #92140c;
+}
+
+#pontuacaoContainer {
+    width: 330px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ece2d0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*------------------- REGRAS --------------------*/
+#containerRegras{
+    width: 360px;
+    height: 720px;
+    background-color: #ece2d0;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    margin: 20px auto;
+}
+
+#regras {
+    width: 300px;
+    height: 500px;
+    background-color: #ece2d0;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    margin-top: 30px auto;
+}
+
+#regras h2{
+    font-family: 'Bellota-Bold', cursive;
+    font-size: 30px;
+    color: #92140c;
+    margin-bottom: 5px;
+}
+
+#regras p, #regras ul, #regras li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #444054;
+    line-height: 1.4;
+}
+
+#logoRegras {
+    background-color: #ece2d0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#logoRegras h1{
+    font-family: 'Bellota-Bold', cursive;
+    font-size: 35px;
+    color: #92140c;
+    margin-bottom: 15px;
+}
+
+#btnVRegras {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: #92140c 5px solid;
+    background-color: #ed7d3a;
+    transition: transform 0.3s;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;;
+    color: #444054;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+#btnVRegras:hover{
+    background-color: #92140c;
+    color: #ece2d0;
+    transform: scale(0.9);
+}
