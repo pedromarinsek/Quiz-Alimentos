@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase 3 | Sabores & Saberes</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <div id="containerFase">
+        <div id="nivel">
+            <h1>Fase 3</h1>
+        </div>
+        <div id="imagem"></div>
+        <div id="pergunta">
+            <div id="enunciado"></div>
+            <div id="alternativas"></div>
+        </div>
+        <div id="pontuacaoContainer">
+            <p>Pontuação: <span id="pontuacao">0</span></p>
+        </div>
+    </div>
+    <script type="module">
+        import { fase3 } from './JS/perguntas.js';
+        import { iniciarQuiz } from './JS/script.js';
+        iniciarQuiz(fase3, null, true);
+    </script>
+</body>
+</html>
